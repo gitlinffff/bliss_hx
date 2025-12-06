@@ -53,6 +53,7 @@ fluids_dict = {
         'cp': 1166.1,            # J/(kg K)    # NIST https://webbook.nist.gov/cgi/cbook.cgi?ID=C690391&Units=SI
         'rho_f': 1533.9,         # kg/m3       # NIST https://webbook.nist.gov/cgi/cbook.cgi?ID=C690391&Units=SI
         'mu': 6.1904e-4          # (Pa s)      # NIST https://webbook.nist.gov/cgi/cbook.cgi?ID=C690391&Units=SI
+        'k':  0.088914           # (W/m K)     # NIST https://webbook.nist.gov/cgi/cbook.cgi?ID=C690391&Units=SI
     },
 
     # NH3  (Reference temperature: 223.15 K  pressure: 0.101MPa)
