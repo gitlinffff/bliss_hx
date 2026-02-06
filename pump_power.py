@@ -56,7 +56,8 @@ def calc_pump_power(fluid, Q, delT, L, D, N_elbow):
 
 def main():
     # system parameters
-    fluid = fluids_dict['Ethylene_Glycol']
+    fl_name = 'Propylene_Glycol'
+    fluid = fluids_dict[fl_name]
     Q = 40.                         # Heat load from PTR (W)
     delT = 25.                      # temperature change of fluid (K)
     L = np.linspace(2., 10., 3)     # total pipe length (m)
@@ -69,6 +70,8 @@ def main():
     Vt, mt, delP_comp, delP_tot, P_f, mass_f = calc_pump_power(fluid, Q, delT, L_mesh,
                                                                D, N_elbow_mesh)
     
+    delP_tot /= 1e3  # Convert to kPa
+
     # Create the filled contour plot
     plt.figure(figsize=(8, 6))
 
@@ -77,10 +80,10 @@ def main():
 
     # Add a colorbar to show the pressure scale
     cbar = plt.colorbar(cp)
-    cbar.set_label('Total Pressure Drop $\\Delta P_{tot}$ (Pa)')
+    cbar.set_label('Total Pressure Drop $\\Delta P_{tot}$ (kPa)')
 
     # Labeling the axes
-    plt.title('Pressure Drop vs. Pipe Length and Number of Elbows')
+    plt.title(f'Pressure Drop vs. Pipe Length and Number of Elbows ({fl_name})')
     plt.xlabel('Total Pipe Length $L$ (m)')
     plt.ylabel('Number of 90° Elbows $N_{elbow}$')
 

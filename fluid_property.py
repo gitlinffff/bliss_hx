@@ -5,7 +5,8 @@ fluids_dict = {
     'imag_fluid': {
         'cp': 1500,              # J/(kg K)
         'rho_f': 1000,         # kg/m3       # NIST https://webbook.nist.gov/cgi/fluid.cgi?ID=C75694&Action=Page
-        'mu': 23.9 * 1e-4      # (Pa s)      # NIST https://webbook.nist.gov/cgi/fluid.cgi?ID=C75694&Action=Page
+        'mu': 23.9 * 1e-4,      # (Pa s)      # NIST https://webbook.nist.gov/cgi/fluid.cgi?ID=C75694&Action=Page
+        'k': None                 # unknown
     },
     
     # CFC 11  (Reference temperature: 242.5 K)
@@ -13,14 +14,16 @@ fluids_dict = {
         'cp': 840.38,            # J/(kg K)    # Osborne, The Heat Capacity, Entropy, Heats of Fusion 
                                          # and Vaporization and Vapor Pressure of Fluorotrichloromethane
         'rho_f': 1601.9,         # kg/m3       # NIST https://webbook.nist.gov/cgi/fluid.cgi?ID=C75694&Action=Page
-        'mu': 7.8308 * 1e-4      # (Pa s)      # NIST https://webbook.nist.gov/cgi/fluid.cgi?ID=C75694&Action=Page
+        'mu': 7.8308 * 1e-4,      # (Pa s)      # NIST https://webbook.nist.gov/cgi/fluid.cgi?ID=C75694&Action=Page
+        'k': None                 # unknown
     },
     
     # Therminol®59  (Reference temperature: 223.15 K)
     'Therminol59': {
         'cp': 1460,              # J/(kg K)    # https://domxoloda.ru/oils/docs/HTF-59.PDF
         'rho_f': 1025,           # kg/m3       # https://domxoloda.ru/oils/docs/HTF-59.PDF
-        'mu': 25043.1e-4     # (Pa s)      # https://domxoloda.ru/oils/docs/HTF-59.PDF
+        'mu': 25043.1e-4,     # (Pa s)      # https://domxoloda.ru/oils/docs/HTF-59.PDF
+        'k': None                 # unknown
     },
     
     # Therminol®LT  (Reference temperature: 223.15 K)
@@ -76,6 +79,15 @@ fluids_dict = {
     'Ethylene_Glycol': {
         'cp': 3040,            # J/(kg K)    # https://www.engineeringtoolbox.com/ethylene-glycol-d_146.html
         'rho_f': 1127,         # kg/m3       # https://www.engineeringtoolbox.com/ethylene-glycol-d_146.html
-        'mu': 644e-4           # (Pa s)      # https://www.mokon.com/products/fluids/glycol-solutions/pdf/Ethylene-Glycol-Technical-Data.pdf
+        'mu': 644e-4,           # (Pa s)      # https://www.mokon.com/products/fluids/glycol-solutions/pdf/Ethylene-Glycol-Technical-Data.pdf
+        'k': None                 # unknown
+    },
+
+    # Propylene Glycol based Water Solutions (244.15 K, 60%.Vol)
+    'Propylene_Glycol': {
+        'cp': 3119,            # J/(kg K)    # https://www.mokon.com/products/fluids/glycol-solutions/pdf/Propylene-Glycol-Technical-Data.pdf
+        'rho_f': 1072,         # kg/m3       # https://www.mokon.com/products/fluids/glycol-solutions/pdf/Propylene-Glycol-Technical-Data.pdf
+        'mu': 0.299,           # (Pa s)      # https://www.mokon.com/products/fluids/glycol-solutions/pdf/Propylene-Glycol-Technical-Data.pdf
+        'k': None              # unknown
     },
 }
