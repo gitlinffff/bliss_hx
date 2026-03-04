@@ -64,7 +64,7 @@ fluids_dict = {
         'cp':    4404.,          # J/(kg K)    # https://webbook.nist.gov/cgi/cbook.cgi?ID=C7664417
         'rho_f': 702.,           # kg/m3       # https://webbook.nist.gov/cgi/cbook.cgi?ID=C7664417
         'mu':    3.2532e-4,      # (Pa s)      # https://webbook.nist.gov/cgi/cbook.cgi?ID=C7664417
-        'k':     0.59694         # (W/m K)     # https://webbook.nist.gov/cgi/cbook.cgi?ID=C7664417
+        'k':     0.59694         # W/(m K)     # https://webbook.nist.gov/cgi/cbook.cgi?ID=C7664417
     },
 
     # NH3  (Reference temperature: 223.15 K  pressure: 1MPa)
@@ -72,7 +72,7 @@ fluids_dict = {
         'cp':    4401.,          # J/(kg K)    # https://webbook.nist.gov/cgi/cbook.cgi?ID=C7664417
         'rho_f': 702.,           # kg/m3       # https://webbook.nist.gov/cgi/cbook.cgi?ID=C7664417
         'mu':    3.2664e-4,      # (Pa s)      # https://webbook.nist.gov/cgi/cbook.cgi?ID=C7664417
-        'k':     0.59828         # (W/m K)     # https://webbook.nist.gov/cgi/cbook.cgi?ID=C7664417
+        'k':     0.59828         # W/(m K)     # https://webbook.nist.gov/cgi/cbook.cgi?ID=C7664417
     },
 
     # Ethylene Glycol based Water Solutions (223.15 K, 50%.Vol)
@@ -85,9 +85,9 @@ fluids_dict = {
 
     # Propylene Glycol based Water Solutions (244.15 K, 60%.Vol)
     'Propylene_Glycol': {
-        'cp': 3119,            # J/(kg K)    # https://www.mokon.com/products/fluids/glycol-solutions/pdf/Propylene-Glycol-Technical-Data.pdf
+        'cp': 3200,            # J/(kg K)    # https://www.mokon.com/products/fluids/glycol-solutions/pdf/Propylene-Glycol-Technical-Data.pdf
         'rho_f': 1072,         # kg/m3       # https://www.mokon.com/products/fluids/glycol-solutions/pdf/Propylene-Glycol-Technical-Data.pdf
         'mu': 0.299,           # (Pa s)      # https://www.mokon.com/products/fluids/glycol-solutions/pdf/Propylene-Glycol-Technical-Data.pdf
-        'k': None              # unknown
+        'k': 0.2942            # W/(m K)     # https://www.mokon.com/products/fluids/glycol-solutions/pdf/Propylene-Glycol-Technical-Data.pdf
     },
 }
